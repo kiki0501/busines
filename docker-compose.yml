@@ -7,6 +7,8 @@ services:
     restart: unless-stopped
     ports:
       - "8000:8000"
+    volumes:
+      - ./business_gemini_session.json:/app/business_gemini_session.json
     environment:
       - PYTHONUNBUFFERED=1
     healthcheck:
