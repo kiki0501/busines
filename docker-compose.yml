@@ -6,7 +6,7 @@ services:
     container_name: business-gemini-pool
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "7860:7860"
     volumes:
       - ./business_gemini_session.json:/app/business_gemini_session.json
       - ./index.html:/app/index.html
